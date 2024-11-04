@@ -1,0 +1,85 @@
+name: Issue - Bug
+description: Reporte de bugs
+labels: ["type: bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Describir el problema
+      description: Incluir una descripcion concisa del problema encontrado
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Pagina/path afectada
+      description: Incluir link donde se encontro el error.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Precondiciones
+      description: Escribir informacion adicional/datos de entrada para reproducir la prueba
+      value: |
+        1. id:
+        2. pass:
+        3. token:
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Paso a paso
+      description: Escribir el paso a paso para reproducir el bug
+      value: |
+        1. Ir a '...'
+        2. Hacer click en '...'
+        3. escrollear hasta '...'
+        4. verifcar error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Resultado esperado
+      description: Describir el resultado que se esperaba del paso a paso
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Captura de pantalla
+      description: Incluir captura de pantalla como evidencia del problema. Arrastrar las imagenes dentro de la caja de texto.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Sistema
+      description: Indicar en que dispositivo se verifico la presencia de la falla.
+      value: |
+        - Dispositivo: [e.g. iPhone 6, Laptop, ]
+        - OS: [iOS 14, Windows 10, Ubuntu 20.0, Android 12.0]
+        - Browser: [Chrome, Safari, Firefox]
+        - Version: [22]
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Agregar detalles adicionales
+      description: Agregar detalles adicionales del contexto/env que crea necesario.
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: Prioridad
+      options:
+        - Alta
+        - Media
+        - Baja
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Criticidad
+      options:
+        - Critica
+        - Alta
+        - Media
+        - Baja
+    validations:
+      required: true
