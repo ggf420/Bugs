@@ -39,17 +39,6 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Ambiente (S.O, Broswer, etc)
-      description: Indicar en que dispositivo se verifico la presencia de la falla.
-      value: |
-        - Dispositivo: [e.g. iPhone 6, Laptop, ]
-        - OS: [iOS 14, Windows 10, Ubuntu 20.0, Android 12.0]
-        - Browser: [Chrome, Safari, Firefox]
-        - Version: [22]
-    validations:
-      required: false
-  - type: textarea
-    attributes:
       label: Info Adicional
       description: Agregar detalles adicionales del contexto/env que crea necesario.
     validations:
